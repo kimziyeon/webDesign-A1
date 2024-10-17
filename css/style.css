@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* 컬러값 상속받음 */
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    color: #333333;
+}
+
+/*  */
+
+.wrap {
+    position: relative;
+}
+
+.inner {
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    height: 100px;
+    background-color: #367;
+    padding: 30px 0 0 10px;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 99;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav>ul>li>a {
+    display: block;
+    width: 120px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+
+}
+
+nav>ul>li:hover>a,
+nav>ul>li>a:focus,
+nav>ul>li.on>a {
+    background-color: #393;
+}
+
+.sub {
+    display: none;
+}
+
+.sub li a {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.sub li a:hover,
+.sub li a:focus {
+    background-color: rgb(102, 198, 102);
+}
+
+
+
+
+.slide {
+    height: 300px;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 900px;
+
+
+}
+
+.slide ul li {
+    width: 1200px;
+    height: 300px;
+}
+
+.slide ul li a {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.slide ul .s1 {
+    background: url(../img/img1.jpg) no-repeat center/cover;
+}
+
+.slide ul .s2 {
+    background: url(../img/img2.jpg) no-repeat center/cover;
+}
+
+.slide ul .s3 {
+    background: url(../img/img3.jpg) no-repeat center/cover;
+}
+
+.slide ul li a h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.con {
+    height: 200px;
+    background-color: #367;
+    display: flex;
+}
+
+.con article {
+    width: 400px;
+
+}
+
+.con article:nth-child(2) {
+    background-color: aquamarine;
+}
+
+.con1 {
+    position: relative;
+}
+
+.con1 .tabmenu {
+    display: flex;
+}
+
+.con1 .tabmenu>li {
+    width: 200px;
+    background-color: #fff;
+}
+
+.con1 .tabmenu>li.on {
+    background-color: #367;
+    color: #fff;
+}
+
+.con1 .tabmenu>li>h2>a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.con1 .tabcon {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.notice {
+    padding-top: 15px;
+
+}
+
+.notice a {
+    display: block;
+    padding: 5px;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice tr {
+    border-bottom: 1px solid #fff;
+}
+
+.notice th {
+    text-align: left;
+    color: #fff;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.notice td {
+    color: #fff;
+
+}
+
+.gall {
+    display: none;
+}
+
+.gall ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.con2 {
+    padding: 10px;
+}
+
+.con2 a {
+    display: block;
+    height: 100%;
+}
+
+.con2 a>div {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.con2 a h2 {
+    text-align: center;
+}
+
+.con2 a ul {
+    text-align: center;
+
+}
+
+.con2 a ul li {}
+
+.con3 {}
+
+.con3 h2 {
+    color: #fff;
+    margin: 20px;
+}
+
+.con3 ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.con3 ul li {}
+
+.con3 ul li a {
+    display: block;
+    height: 100%;
+}
+
+.con3 ul li a p {
+    width: 80px;
+    height: 80px;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.con3 ul li a span {
+    display: block;
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+footer {
+    height: 100px;
+    background-color: gainsboro;
+    color: #fff;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.fsns {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.fsns li {}
+
+.fsns li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.fsns li a>img {
+    border-radius: 3px;
+
+}
+
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    padding: 30px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.popup h2 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.popup .pimg {
+    padding-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.popup .ptext {
+    width: 100%;
+}
+
+.popup .ptext div {
+    text-align: center;
+    width: 100%;
+}
+
+.popup .pbtn {
+    text-align: right;
+}
+
+.popup .pbtn button {
+    border: none;
+    background: none;
+}
